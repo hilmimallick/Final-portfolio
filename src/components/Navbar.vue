@@ -3,10 +3,13 @@
     <nav class="branding">
       <ul v-show="!mobile" class="navigation">
         <li>
-          <router-link class="link" to="/Home">Home</router-link>
+          <router-link class="link" to="/">Home</router-link>
         </li>
         <li>
           <router-link class="link" to="/About">About</router-link>
+        </li>
+        <li>
+          <router-link class="link" to="/Resume">Resume</router-link>
         </li>
         <li>
           <router-link class="link" to="/Projects">Projects</router-link>
@@ -31,10 +34,13 @@
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li>
-            <router-link class="link" to="/Home">Home</router-link>
+            <router-link class="link" to="/">Home</router-link>
           </li>
           <li>
             <router-link class="link" to="/About">About</router-link>
+          </li>
+          <li>
+            <router-link class="link" to="/Resume">Resume</router-link>
           </li>
           <li>
             <router-link class="link" to="/Projects">Projects</router-link>
