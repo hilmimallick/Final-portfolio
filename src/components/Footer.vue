@@ -13,7 +13,7 @@ export default {
 <style>
 footer {
   position: fixed;
-  background-color: #1e7188;
+  background-color: #17b9ce;
   width: 100%;
   text-align: center;
   color: black;

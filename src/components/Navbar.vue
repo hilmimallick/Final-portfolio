@@ -100,7 +100,7 @@ nav {
   width: 100%;
   margin: 0;
   position: fixed;
-  background-color: rgba(52, 214, 232, 0.5);
+  background-color: rgba(58, 226, 245, 0.7);
   z-index: 99;
   height: 50px;
 }
@@ -169,7 +169,7 @@ icon-active {
   width: 100%;
   max-width: 250px;
   height: 100%;
-  background-color: rgba(52, 214, 232, 0.5);
+  background-color: rgba(58, 226, 245, 0.5);
   top: 0;
   left: 0;
 }
