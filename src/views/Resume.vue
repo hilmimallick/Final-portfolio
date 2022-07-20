@@ -1,14 +1,33 @@
 <template>
-  <div class="Resume">
+  <!-- <div class="Resume">
     <h1 class="resume-heading">MY RESUME</h1>
     <div v-for="res in resume" :key="res.id" class="card" style="width: 18rem">
       <div class="card m-3" style="width: 18rem">
         <img v-bind:src="res.img" class="img-fluid" />
         <div class="card-body">
           <p class="card-text-event">{{ res.name }}</p>
-          <p class="card-text-event">{{ res.made_with }}</p>
+          <p class="card-text-event">{{ res.date }}</p>
           <p class="card-text-event">{{ res.description }}</p>
-          <p class="card-text-event">{{ res.academy }}</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="Resume">
+    <h1 class="resume-heading">MY RESUME</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          v-for="res in resume"
+          :key="res.id"
+          class="col-md-3 d-flex justify-content-center p-1"
+        >
+          <div class="card border-info border-3 h-100" style="max-width: 18rem">
+            <div class="card-header">{{ res.name }}</div>
+            <div class="card-body">
+              <h5 class="card-title">{{ res.date }}</h5>
+              <p class="card-text">{{ res.description }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -21,63 +40,29 @@ export default {
       resume: [
         {
           id: 1,
-          name: "lorem",
-          made_with: "html and css",
-          description: "lorem",
-          img: "",
-          academy: "life choices academy",
-          github: "",
-          netlify: "",
+          name: "Trafalgar High School",
+          date: "3013-2017",
+          description: "I started and matriculated at Trafalgar High School.",
         },
         {
           id: 2,
-          name: "lorem",
-          made_with: "html and css",
-          description: "lorem",
-          img: "",
-          academy: "life choices academy",
-          github: "",
-          netlify: "",
+          name: "South African Education Program (SAEP)",
+          date: "2019",
+          description:
+            "A year long program bridging programme which included academic tutoring, basic computer skills training, educational excursions, career guidance, life skills training and community service.",
         },
         {
           id: 3,
-          name: "lorem",
-          made_with: "html and css",
-          description: "lorem",
-          img: "",
-          academy: "life choices academy",
-          github: "",
-          netlify: "",
+          name: "CompTIA A+",
+          date: "March 2021- March 2022",
+          description:
+            "Accredited IT Technician course which covered hardware, software installation and troubleshooting of PCs/laptop all online via IT Academy.",
         },
         {
           id: 4,
-          name: "lorem",
-          made_with: "html and css",
-          description: "lorem",
-          img: "",
-          academy: "life choices academy",
-          github: "",
-          netlify: "",
-        },
-        {
-          id: 5,
-          name: "lorem",
-          made_with: "html and css",
-          description: "lorem",
-          img: "",
-          academy: "life choices academy",
-          github: "",
-          netlify: "",
-        },
-        {
-          id: 6,
-          name: "lorem",
-          made_with: "html and css",
-          description: "lorem",
-          img: "",
-          academy: "life choices academy",
-          github: "",
-          netlify: "",
+          name: "LIfe Choices Academy",
+          date: "28 March 2022-Present",
+          description: "",
         },
       ],
     };

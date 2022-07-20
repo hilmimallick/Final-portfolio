@@ -1,63 +1,163 @@
 <template>
+  <!-- <div class="About">
+    <h1 class="about-heading">ABOUT ME</h1>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="img-fluid"
+                  id="ap"
+                  src="https://i.postimg.cc/qvS0kFxT/Hilmi-1-removebg-preview-1.png"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <table
+                class="table table-borderless d-flex justify-content-center"
+              >
+                <tbody>
+                  <tr>
+                    <th>D.O.B:</th>
+                    <td>07/01/2000</td>
+                  </tr>
+                  <tr>
+                    <th>Country:</th>
+                    <td>South Africa</td>
+                  </tr>
+                  <tr>
+                    <th>Location:</th>
+                    <td>Cape Town</td>
+                  </tr>
+                  <tr>
+                    <th>E-mail:</th>
+                    <td>hilmi09mallick@gmail.com</td>
+                  </tr>
+
+                  <tr>
+                    <th>Phone:</th>
+                    <td>0845844295</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <p class="lead">
+            I am person known to be organised, a team-player and patient when it
+            comes to helping people. I am an open minded person that looks for
+            ways to make my ideas come to reality through coding. <br />
+            My hobbies include running a 5km parkrun every Saturday morning,
+            hiking and I am a Western Province golfer and I love reading.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
   <div class="About">
     <h1 class="about-heading">ABOUT ME</h1>
-    <div
-      v-for="skill in skills"
-      :key="skill.id"
-      class="card"
-      style="width: 18rem"
-    >
-      <div class="card m-3" style="width: 18rem">
-        <img v-bind:src="skill.img" class="img-fluid" />
-        <div class="card-body">
-          <p class="card-text-event">{{ skill.name }}</p>
-          <p class="card-text-event">{{ skill.made_with }}</p>
-          <p class="card-text-event">{{ skill.description }}</p>
-          <p class="card-text-event">{{ skill.academy }}</p>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <!-- for the image -->
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="img-fluid"
+                  id="ap"
+                  src="https://i.postimg.cc/qvS0kFxT/Hilmi-1-removebg-preview-1.png"
+                />
+              </div>
+            </div>
+
+            <!-- for the table -->
+            <div class="col-md-6">
+              <table
+                class="table table-borderless d-flex justify-content-center"
+              >
+                <tbody>
+                  <tr>
+                    <th>D.O.B:</th>
+                    <td>07/01/2000</td>
+                  </tr>
+                  <tr>
+                    <th>Country:</th>
+                    <td>South Africa</td>
+                  </tr>
+                  <tr>
+                    <th>Location:</th>
+                    <td>Cape Town</td>
+                  </tr>
+                  <tr>
+                    <th>E-mail:</th>
+                    <td>hilmi09mallick@gmail.com</td>
+                  </tr>
+
+                  <tr>
+                    <th>Phone:</th>
+                    <td>0845844295</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- for the text -->
+          <div>
+            <p class="lead">
+              I am person known to be organised, a team-player and patient when
+              it comes to helping people. I am an open minded person that looks
+              for ways to make my ideas come to reality through coding.
+              <br />
+              My hobbies include running a 5km parkrun every Saturday morning,
+              hiking and I am a Western Province golfer and I love reading.
+            </p>
+          </div>
+        </div>
+
+        <!-- for the skills -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div><i class="fa-brands fa-html5"></i></div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+              <div><i class="fa-brands fa-css3-alt"></i></div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+              <div><i class="fa-brands fa-js-square"></i></div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+              <div><i class="fa-solid fa-database"></i></div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+              <div><i class="fa-brands fa-bootstrap"></i></div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+              <div><i class="fa-brands fa-node"></i></div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center">
+              <div><i class="fa-brands fa-github"></i></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      skills: [
-        {
-          id: 1,
-          name: "lorem",
-          skill_icon: "",
-        },
-        {
-          id: 2,
-          name: "lorem",
-          skill_icon: "",
-        },
-        {
-          id: 3,
-          name: "lorem",
-          skill_icon: "",
-        },
-        {
-          id: 4,
-          name: "lorem",
-          skill_icon: "",
-        },
-        {
-          id: 5,
-          name: "lorem",
-          skill_icon: "",
-        },
-        {
-          id: 6,
-          name: "lorem",
-          skill_icon: "",
-        },
-      ],
-    };
-  },
-};
+export default {};
 </script>
 <style>
 .About {
@@ -88,6 +188,19 @@ export default {
     color: #fff;
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
       0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+
+#ap {
+  height: 260px;
+  width: 275px;
+  margin-top: -60px;
+  animation: float 4s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
   }
 }
 </style>
