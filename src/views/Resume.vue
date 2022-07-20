@@ -1,10 +1,88 @@
 <template>
   <div class="Resume">
     <h1 class="resume-heading">MY RESUME</h1>
+    <div v-for="res in resume" :key="res.id" class="card" style="width: 18rem">
+      <div class="card m-3" style="width: 18rem">
+        <img v-bind:src="res.img" class="img-fluid" />
+        <div class="card-body">
+          <p class="card-text-event">{{ res.name }}</p>
+          <p class="card-text-event">{{ res.made_with }}</p>
+          <p class="card-text-event">{{ res.description }}</p>
+          <p class="card-text-event">{{ res.academy }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      resume: [
+        {
+          id: 1,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 2,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 3,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 4,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 5,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 6,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style>
 .Resume {

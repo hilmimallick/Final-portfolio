@@ -1,19 +1,27 @@
 <template>
-  <div class="Testimonials">
+  <div id="Testimonials">
     <h1 class="testimonials-heading">MY TESTIMONIALS</h1>
-    <div
-      v-for="test in testimonials"
-      :key="test.id"
-      class="card"
-      style="width: 18rem"
-    >
-      <div class="card m-3" style="width: 18rem">
-        <img v-bind:src="test.img" class="img-fluid" />
-        <div class="card-body">
-          <p class="card-text-event">{{ test.name }}</p>
-          <p class="card-text-event">{{ test.occupation }}</p>
-          <p class="card-text-event">{{ test.quote }}</p>
-          <p class="card-text-event">{{ test.email }}</p>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          v-for="test in testimonials"
+          :key="test.id"
+          class="col-md-4 d-flex justify-content-center p-1"
+        >
+          <div class="friend">
+            <img
+              class="img-fluid rounded border border-5 border-dark"
+              v-bind:src="test.img"
+              id="testpic"
+            />
+            <div class="friend-details rounded">
+              <h5>{{ test.name }}</h5>
+              <p>{{ test.occupation }}</p>
+              <p>{{ test.quote }}</p>
+              <p>{{ test.email }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -27,7 +35,7 @@ export default {
         {
           id: 1,
           name: "Ashwin Jacobs",
-          img: "",
+          img: "https://i.postimg.cc/YSdvdXxL/Ashwin-2.jpg",
           email: "ashwin.dean21@gmail.com",
           occupation: "Colleague",
           quote:
@@ -36,7 +44,7 @@ export default {
         {
           id: 2,
           name: "Lihle Goliath",
-          img: "",
+          img: "https://i.postimg.cc/RZ54K2jV/Lihle-1.jpg",
           email: "lihlegoliath2@gmail.com",
           occupation: "Colleague",
           quote:
@@ -45,7 +53,7 @@ export default {
         {
           id: 3,
           name: "Lunga Booi",
-          img: "",
+          img: "https://i.postimg.cc/jjyXCnyS/Lunga-1.jpg",
           email: "lungalucasbooi@gmail.com",
           occupation: "Colleague",
           quote:
@@ -54,7 +62,7 @@ export default {
         {
           id: 4,
           name: "Tshimologo King Mabena",
-          img: "",
+          img: "https://i.postimg.cc/NjBTbCXB/Tshimologo-2.jpg",
           email: "tshimologokingmabena@gmail.com",
           occupation: "Colleague",
           quote:
@@ -63,7 +71,7 @@ export default {
         {
           id: 5,
           name: "Carla Lawrence",
-          img: "",
+          img: "https://i.postimg.cc/Jznc3dJv/Carla-2.jpg",
           email: "carlaamylawrence@gmail.com",
           occupation:
             "Hilmi Malllick is an exceptional web developer. He is laser focused, highly skilled and determined to take on any task given to him. His ambition bleeds into all aspects of his life both personal and professional. It is a pleasure to have worked alongside him and I can, without a doubt, say that Hilmi would be the perfect addition to any team.",
@@ -75,8 +83,7 @@ export default {
 };
 </script>
 <style>
-.Testimonials {
-  height: 96vh;
+#Testimonials {
   background-color: black;
   padding-top: 50px;
 }
@@ -104,5 +111,41 @@ export default {
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
       0 0 80px #03bcf4, 0 0 160px #03bcf4;
   }
+}
+#testpic {
+  height: 400px;
+  width: 300px;
+}
+.friend {
+  position: relative;
+  height: 400px;
+  width: 300px;
+}
+
+.friend-details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.7) 50%
+  );
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.friend:hover .friend-details {
+  opacity: 1;
+}
+.container-fluid {
+  margin-top: 40px;
 }
 </style>

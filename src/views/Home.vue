@@ -607,4 +607,13 @@ export default {};
     transform: translateY(-2000px);
   }
 }
+#title {
+  animation: float 4s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 50px);
+  }
+}
 </style>

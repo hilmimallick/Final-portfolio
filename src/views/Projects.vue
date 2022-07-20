@@ -1,10 +1,93 @@
 <template>
   <div class="Projects">
     <h1 class="projects-heading">MY PROJECTS</h1>
+    <div
+      v-for="project in projects"
+      :key="project.id"
+      class="card"
+      style="width: 18rem"
+    >
+      <div class="card m-3" style="width: 18rem">
+        <img v-bind:src="project.img" class="img-fluid" />
+        <div class="card-body">
+          <p class="card-text-event">{{ project.name }}</p>
+          <p class="card-text-event">{{ project.made_with }}</p>
+          <p class="card-text-event">{{ project.description }}</p>
+          <p class="card-text-event">{{ project.academy }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      projects: [
+        {
+          id: 1,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 2,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 3,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 4,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 5,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+        {
+          id: 6,
+          name: "lorem",
+          made_with: "html and css",
+          description: "lorem",
+          img: "",
+          academy: "life choices academy",
+          github: "",
+          netlify: "",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style>
 .Projects {

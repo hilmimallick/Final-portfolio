@@ -1,10 +1,63 @@
 <template>
   <div class="About">
     <h1 class="about-heading">ABOUT ME</h1>
+    <div
+      v-for="skill in skills"
+      :key="skill.id"
+      class="card"
+      style="width: 18rem"
+    >
+      <div class="card m-3" style="width: 18rem">
+        <img v-bind:src="skill.img" class="img-fluid" />
+        <div class="card-body">
+          <p class="card-text-event">{{ skill.name }}</p>
+          <p class="card-text-event">{{ skill.made_with }}</p>
+          <p class="card-text-event">{{ skill.description }}</p>
+          <p class="card-text-event">{{ skill.academy }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      skills: [
+        {
+          id: 1,
+          name: "lorem",
+          skill_icon: "",
+        },
+        {
+          id: 2,
+          name: "lorem",
+          skill_icon: "",
+        },
+        {
+          id: 3,
+          name: "lorem",
+          skill_icon: "",
+        },
+        {
+          id: 4,
+          name: "lorem",
+          skill_icon: "",
+        },
+        {
+          id: 5,
+          name: "lorem",
+          skill_icon: "",
+        },
+        {
+          id: 6,
+          name: "lorem",
+          skill_icon: "",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style>
 .About {
