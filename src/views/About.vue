@@ -4,7 +4,7 @@
     <div class="container-fluid mt-5">
       <div class="row">
         <div class="col-md-6">
-          <div class="row">
+          <div class="row pb-5">
             <!-- for the image -->
             <div class="col-md-6">
               <div class="d-flex justify-content-center">
@@ -19,7 +19,7 @@
             <!-- for the table -->
             <div class="col-md-6">
               <table
-                class="table table-borderless d-flex justify-content-center"
+                class="table table-borderless d-flex justify-content-center text-white"
               >
                 <tbody>
                   <tr>
@@ -50,7 +50,7 @@
 
           <!-- for the text -->
           <div>
-            <p class="lead">
+            <p class="lead text-white">
               I am person known to be organised, a team-player and patient when
               it comes to helping people. I am an open minded person that looks
               for ways to make my ideas come to reality through coding.
@@ -65,31 +65,33 @@
         <div class="col-md-6 skill-border">
           <div class="row">
             <div class="col-md-4 d-flex justify-content-center">
-              <div><i class="fa-brands fa-html5"></i></div>
+              <div>
+                <i class="fa-brands fa-html5" id="skills-icon"></i>
+              </div>
             </div>
 
             <div class="col-md-4 d-flex justify-content-center">
-              <div><i class="fa-brands fa-css3-alt"></i></div>
+              <div><i class="fa-brands fa-css3-alt" id="skills-icon"></i></div>
             </div>
 
             <div class="col-md-4 d-flex justify-content-center">
-              <div><i class="fa-brands fa-js-square"></i></div>
+              <div><i class="fa-brands fa-js-square" id="skills-icon"></i></div>
             </div>
 
             <div class="col-md-4 d-flex justify-content-center">
-              <div><i class="fa-solid fa-database"></i></div>
+              <div><i class="fa-solid fa-database" id="skills-icon"></i></div>
             </div>
 
             <div class="col-md-4 d-flex justify-content-center">
-              <div><i class="fa-brands fa-bootstrap"></i></div>
+              <div><i class="fa-brands fa-bootstrap" id="skills-icon"></i></div>
             </div>
 
             <div class="col-md-4 d-flex justify-content-center">
-              <div><i class="fa-brands fa-node"></i></div>
+              <div><i class="fa-brands fa-node" id="skills-icon"></i></div>
             </div>
 
             <div class="col-md-4 d-flex justify-content-center">
-              <div><i class="fa-brands fa-github"></i></div>
+              <div><i class="fa-brands fa-github" id="skills-icon"></i></div>
             </div>
           </div>
         </div>
@@ -141,11 +143,17 @@ export default {};
 
 @keyframes float {
   50% {
-    transform: translate(0, -10px);
+    transform: translate(0, -5px);
   }
 }
 
 .skill-border {
   border-left: 2px solid #03bcf4;
+}
+
+#skills-icon {
+  color: #03bcf4;
+  font-size: 3rem;
+  margin: 2rem;
 }
 </style>

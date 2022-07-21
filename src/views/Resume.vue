@@ -1,17 +1,4 @@
 <template>
-  <!-- <div class="Resume">
-    <h1 class="resume-heading">MY RESUME</h1>
-    <div v-for="res in resume" :key="res.id" class="card" style="width: 18rem">
-      <div class="card m-3" style="width: 18rem">
-        <img v-bind:src="res.img" class="img-fluid" />
-        <div class="card-body">
-          <p class="card-text-event">{{ res.name }}</p>
-          <p class="card-text-event">{{ res.date }}</p>
-          <p class="card-text-event">{{ res.description }}</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div class="Resume">
     <h1 class="resume-heading">MY RESUME</h1>
     <div class="container-fluid">
@@ -21,7 +8,11 @@
           :key="res.id"
           class="col-md-3 d-flex justify-content-center p-1"
         >
-          <div class="card border-info border-3 h-100" style="max-width: 18rem">
+          <div
+            class="card h-100 text-white"
+            style="max-width: 18rem"
+            id="resume-card"
+          >
             <div class="card-header">{{ res.name }}</div>
             <div class="card-body">
               <h5 class="card-title">{{ res.date }}</h5>
@@ -99,5 +90,11 @@ export default {
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
       0 0 80px #03bcf4, 0 0 160px #03bcf4;
   }
+}
+
+#resume-card {
+  margin-top: 30px;
+  background-color: transparent;
+  border: 2px solid #03bcf4;
 }
 </style>
