@@ -145,12 +145,7 @@ export default {};
   }
 }
 
-<<<<<<< HEAD
 .skill-border {
   border-left: 2px solid #03bcf4;
-=======
-.skill-border{
-  border-left: 2px solid #03bcf4 ;
->>>>>>> 15d684b88c985ebed6429f616873fdfe8f15ae91
 }
 </style>
