@@ -76,7 +76,15 @@ export default {
           occupation:
             "Hilmi Malllick is an exceptional web developer. He is laser focused, highly skilled and determined to take on any task given to him. His ambition bleeds into all aspects of his life both personal and professional. It is a pleasure to have worked alongside him and I can, without a doubt, say that Hilmi would be the perfect addition to any team.",
         },
-        // { id: 6, name: "", img: "", email: "", occupation: "", quote: "" },
+        {
+          id: 6,
+          name: "Jason Wandrag",
+          img: "https://i.postimg.cc/5NbpthsD/Jason.jpg",
+          email: "",
+          occupation: "lecture",
+          quote:
+            "Hilmi is one of the most hardworking interns I have had the pleasure of working with. He also has a very calming demeanor and is always willing to help his peers. With a little guidance, Hilmi will definitely be a valuable developer.",
+        },
       ],
     };
   },

@@ -9,17 +9,14 @@ export default {
 };
 </script>
 <style>
-.img-fluid {
+#pro-img {
   border-radius: 5px;
+  height: 250px;
+  width: 280px;
   transition: 0.3s linear;
 }
 
-.img-fluid:hover {
+#pro-img:hover {
   transform: scale(1.2);
-}
-
-#pro-img {
-  height: 250px;
-  width: 280px;
 }
 </style>

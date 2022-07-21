@@ -2,7 +2,7 @@
   <div class="Projects">
     <h1 class="projects-heading">MY PROJECTS</h1>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" id="pro-row">
         <ProjectsCard
           v-for="project in projects"
           :key="project.id"
@@ -25,10 +25,10 @@ export default {
           name: "To-do-list",
           made_with: "HTML, CSS and JavaScript",
           description: "lorem",
-          img: "",
+          img: "https://i.postimg.cc/5025vR7p/Screenshot-2022-07-21-115612.png",
           academy: "life Choices Academy",
-          github: "",
-          netlify: "",
+          github: "https://github.com/hilmimallick/TO-DO-LIST.git",
+          netlify: "https://stellular-naiad-29a7b0.netlify.app",
         },
         {
           id: 2,
@@ -37,8 +37,9 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/SRwc17xW/Screenshot-51.png",
           academy: "Free-Code-Camp",
-          github: "",
-          netlify: "",
+          github:
+            "https://github.com/hilmimallick/freecodecamp-registration-form-practice.git",
+          netlify: "https://coruscating-frangipane-cf38ee.netlify.app",
         },
         {
           id: 3,
@@ -47,8 +48,8 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/vZv3Tkmk/Screenshot-52.png",
           academy: "life choices academy",
-          github: "",
-          netlify: "",
+          github: "https://github.com/hilmimallick/BMI-calculator.git",
+          netlify: "https://gorgeous-begonia-fd4ec9.netlify.app",
         },
         {
           id: 4,
@@ -57,8 +58,8 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/kgjKkmGJ/Screenshot-53.png",
           academy: "life choices academy",
-          github: "",
-          netlify: "",
+          github: "https://github.com/hilmimallick/temperature-converter.git",
+          netlify: "https://ephemeral-cobbler-b83f0e.netlify.app",
         },
         {
           id: 5,
@@ -67,8 +68,8 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/FRSSdkZz/Screenshot-55.png",
           academy: "life choices academy",
-          github: "",
-          netlify: "",
+          github: "https://github.com/hilmimallick/Calculator.git",
+          netlify: "https://rainbow-parfait-bcf833.netlify.app",
         },
         {
           id: 6,
@@ -77,8 +78,8 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/pVZT0Bpx/Screenshot-48.png",
           academy: "Free Code Camp",
-          github: "",
-          netlify: "",
+          github: "https://github.com/hilmimallick/my_survey_form.git",
+          netlify: "https://stirring-salmiakki-d8656a.netlify.app",
         },
         {
           id: 7,
@@ -87,8 +88,8 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/MpDJwsJK/Screenshot-47.png",
           academy: "Life Choices Academy",
-          github: "",
-          netlify: "",
+          github: "https://github.com/hilmimallick/restaurant-bootstrap.git",
+          netlify: "https://unrivaled-kheer-3c55b6.netlify.app",
         },
         {
           id: 8,
@@ -97,8 +98,9 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/dQ27byVQ/Screenshot-54.png",
           academy: "Life Choices Academy",
-          github: "",
-          netlify: "",
+          github:
+            "https://github.com/hilmimallick/freecodecamp-coloredmarker-practice.git",
+          netlify: "https://flourishing-tarsier-8f3289.netlify.app",
         },
         {
           id: 9,
@@ -107,8 +109,8 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/Qx3zMpbB/Screenshot-58.png",
           academy: "Life Choices Academy",
-          github: "",
-          netlify: "",
+          github: "https://github.com/hilmimallick/end-of-module-project.git",
+          netlify: "https://subtle-cannoli-0fb745.netlify.app",
         },
         {
           id: 10,
@@ -117,8 +119,9 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/zfQtYQph/Screenshot-56.png",
           academy: "Life Choices Academy",
-          github: "",
-          netlify: "",
+          github:
+            "https://github.com/hilmimallick/freecodecamp-cafe-menu-practice.git",
+          netlify: "https://harmonious-chaja-b4e8ef.netlify.app",
         },
         {
           id: 11,
@@ -127,8 +130,9 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/4dTccbxM/Screenshot-57.png",
           academy: "Life Choices Academy",
-          github: "",
-          netlify: "",
+          github:
+            "https://github.com/hilmimallick/freecodecamp-catphotoapp-practice.git",
+          netlify: "https://hilarious-rolypoly-65472a.netlify.app",
         },
         {
           id: 12,
@@ -137,8 +141,8 @@ export default {
           description: "lorem",
           img: "https://i.postimg.cc/Y0Djd1tt/Screenshot-49.png",
           academy: "Life Choices Academy",
-          github: "",
-          netlify: "",
+          github: "https://github.com/hilmimallick/JavaScript-project.git",
+          netlify: "https://jade-rugelach-d0a5b2.netlify.app",
         },
       ],
     };
@@ -149,6 +153,10 @@ export default {
 .Projects {
   height: 96vh;
   background-color: black;
+  padding-top: 50px;
+}
+
+#pro-row {
   padding-top: 50px;
 }
 
