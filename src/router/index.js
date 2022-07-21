@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import oneProject from "../views/oneProject.vue";
 
 const routes = [
   {
@@ -21,6 +22,7 @@ const routes = [
     name: "Projects",
     component: () => import("../views/Projects.vue"),
   },
+
   {
     path: "/Testimonials",
     name: "Testimonials",
@@ -30,6 +32,13 @@ const routes = [
     path: "/Contact",
     name: "Contact",
     component: () => import("../views/Contact.vue"),
+  },
+
+  {
+    path: "/Projects/:id",
+    name: "oneProject",
+    component: oneProject,
+    props: true,
   },
 ];
 

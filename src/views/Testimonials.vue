@@ -86,6 +86,7 @@ export default {
 #Testimonials {
   background-color: black;
   padding-top: 50px;
+  height: 96vh auto;
 }
 
 .testimonials-heading {

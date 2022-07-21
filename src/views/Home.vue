@@ -7,7 +7,7 @@
       <div id="title">
         <span>Hi, I'm Hilmi Mallick</span>
         <br />
-        <span>~An aspiaring web developer~</span>
+        <span>~An aspiring web developer~</span>
       </div>
     </section>
   </div>

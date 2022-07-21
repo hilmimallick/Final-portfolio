@@ -1,24 +1,34 @@
 <template>
-  <div class="Projects">
-    <h1 class="projects-heading">MY PROJECTS</h1>
-    <div class="container-fluid">
-      <div class="row">
-        <ProjectsCard
-          v-for="project in projects"
-          :key="project.id"
-          :project="project"
-          class="col-md-2"
-        />
+  <!-- <div>
+    <h1>Single card</h1>
+    <div v-if="project">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem">
+          <img v-bind:src="project.img" class="img-fluid" />
+          <div class="card-body">
+            <p class="card-text">{{ project.name }}</p>
+            <p class="card-text">{{ project.made_with }}</p>
+            <p class="card-text">{{ project.description }}</p>
+            <p class="card-text">{{ project.academy }}</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6"></div>
     </div>
   </div>
 </template>
 <script>
-import ProjectsCard from "../components/ProjectsCard.vue";
 export default {
-  components: { ProjectsCard },
+  props: ["project"],
   data() {
     return {
+      id: this.$route.params.id,
+
       projects: [
         {
           id: 1,
@@ -143,37 +153,11 @@ export default {
       ],
     };
   },
+  computed: {
+    project() {
+      return this.projects.find((project) => project.id == this.id);
+    },
+  },
 };
 </script>
-<style>
-.Projects {
-  height: 96vh;
-  background-color: black;
-  padding-top: 50px;
-}
-
-.projects-heading {
-  font-size: 3rem;
-  letter-spacing: 3px;
-  color: #0e3742;
-  text-transform: uppercase;
-  width: 100%;
-  text-align: center;
-  -webkit-box-reflect: below 0.5px linear-gradient(transparent, #0008);
-  line-height: 0.9em;
-  outline: none;
-  animation: animate 6000000s linear infinite;
-}
-
-@keyframes animate {
-  100% {
-    color: #0e3742;
-    text-shadow: none;
-  }
-  0% {
-    color: #fff;
-    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
-      0 0 80px #03bcf4, 0 0 160px #03bcf4;
-  }
-}
-</style>
+<style></style>
