@@ -25,17 +25,28 @@ export default {
           name: "To-do-list",
           made_with: "HTML, CSS and JavaScript",
           description: "lorem",
+<<<<<<< HEAD
           img: "https://i.postimg.cc/VvcY7JcJ/Screenshot-50.png",
+=======
+          img: "",
+>>>>>>> 15d684b88c985ebed6429f616873fdfe8f15ae91
           academy: "life Choices Academy",
           github: "",
           netlify: "",
         },
         {
           id: 2,
+<<<<<<< HEAD
           name: "Register form",
           made_with: "HTML and CSS",
           description: "lorem",
           img: "https://i.postimg.cc/SRwc17xW/Screenshot-51.png",
+=======
+          name: "Resiter form",
+          made_with: "HTML and CSS",
+          description: "lorem",
+          img: "",
+>>>>>>> 15d684b88c985ebed6429f616873fdfe8f15ae91
           academy: "Free-Code-Camp",
           github: "",
           netlify: "",
@@ -75,21 +86,34 @@ export default {
           name: "Survey Form",
           made_with: "HTML and CSS",
           description: "lorem",
+<<<<<<< HEAD
           img: "https://i.postimg.cc/pVZT0Bpx/Screenshot-48.png",
+=======
+          img: "",
+>>>>>>> 15d684b88c985ebed6429f616873fdfe8f15ae91
           academy: "Free Code Camp",
           github: "",
           netlify: "",
         },
+<<<<<<< HEAD
         {
+=======
+         {
+>>>>>>> 15d684b88c985ebed6429f616873fdfe8f15ae91
           id: 7,
           name: "Resaurant Web Page",
           made_with: "HTML, CSS and Bootstrap",
           description: "lorem",
+<<<<<<< HEAD
           img: "https://i.postimg.cc/MpDJwsJK/Screenshot-47.png",
+=======
+          img: "",
+>>>>>>> 15d684b88c985ebed6429f616873fdfe8f15ae91
           academy: "Life Choices Academy",
           github: "",
           netlify: "",
         },
+<<<<<<< HEAD
         {
           id: 8,
           name: "CSS Color Markers",
@@ -136,6 +160,14 @@ export default {
           made_with: "HTML, CSS and Bootstrap",
           description: "lorem",
           img: "https://i.postimg.cc/Y0Djd1tt/Screenshot-49.png",
+=======
+         {
+          id: 8,
+          name: "My fisrt Portfolio",
+          made_with: "HTML, CSS and Bootstrap",
+          description: "lorem",
+          img: "",
+>>>>>>> 15d684b88c985ebed6429f616873fdfe8f15ae91
           academy: "Life Choices Academy",
           github: "",
           netlify: "",
