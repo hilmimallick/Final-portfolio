@@ -55,7 +55,7 @@ export default {
           name: "LIfe Choices Academy",
           date: "28 March 2022-Present",
           description:
-            "Life Choices Academy offers a 12 month coding program in which the first 6 months is just learning and the last 6 months the academy assist in in getting interviews and with projects for exprience",
+            "Life Choices Academy offers a 12 month coding program in which the first 6 months is just learning and the last 6 months the academy assist in in getting interviews and with projects for exprience.",
         },
       ],
     };
