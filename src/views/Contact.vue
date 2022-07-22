@@ -72,6 +72,7 @@ body {
   background-color: black;
   padding-top: 50px;
   max-height: fit-content;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 700px) {
@@ -108,7 +109,7 @@ body {
 .container {
   margin: auto;
   padding: auto;
-  width: 100%;
+  width: 100vwz;
   height: 475px;
   border-radius: 10px;
   background-clip: padding-box;
