@@ -4,7 +4,7 @@
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <div id="title">
+      <div id="title" class="title-head">
         <span>Hi, I'm Hilmi Mallick</span>
         <br />
         <span>~An aspiring web developer~</span>
@@ -16,7 +16,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .Home {
   height: 96vh;
   background: radial-gradient(ellipse at bottom, black 0%, black 100%);
@@ -35,6 +35,13 @@ export default {};
   letter-spacing: 10px;
   margin-top: -60px;
   padding-left: 10px;
+}
+
+@media only screen and (max-width: 440px) {
+  #title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 #title span {
