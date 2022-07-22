@@ -3,7 +3,7 @@
     <h1 class="about-heading">ABOUT ME</h1>
     <div class="container-fluid mt-5">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="row pb-5">
             <!-- for the image -->
             <div class="col-md-6">
@@ -51,9 +51,9 @@
           <!-- for the text -->
           <div>
             <p class="lead text-white">
-              I am person known to be organised, a team-player and patient when
-              it comes to helping people. I am an open minded person that looks
-              for ways to make my ideas come to reality through coding.
+              I am a person known to be organised, a team-player and patient
+              when it comes to helping people. I am an open minded person that
+              looks for ways to make my ideas come to reality through coding.
               <br />
               My hobbies include running a 5km parkrun every Saturday morning,
               hiking and I am a Western Province golfer and I love reading.
@@ -62,7 +62,7 @@
         </div>
 
         <!-- for the skills -->
-        <div class="col-md-6 skill-border">
+        <div class="col-lg-6 skill-border">
           <div class="row">
             <div class="col-md-4 d-flex justify-content-center">
               <div>
@@ -103,10 +103,21 @@
 export default {};
 </script>
 <style>
+body {
+  background-color: black;
+}
+
 .About {
-  height: 96vh;
   background-color: black;
   padding-top: 50px;
+  height: 96vh;
+  max-height: fit-content;
+}
+
+@media only screen and (max-width: 700px) {
+  .About {
+    height: fit-content;
+  }
 }
 
 .about-heading {
@@ -138,22 +149,33 @@ export default {};
   height: 260px;
   width: 275px;
   margin-top: -60px;
-  animation: float 4s ease-out infinite;
 }
 
-@keyframes float {
-  50% {
-    transform: translate(0, -5px);
+@media only screen and (max-width: 767px) {
+  #ap {
+    margin-top: 2px;
   }
 }
 
 .skill-border {
   border-left: 2px solid #03bcf4;
 }
+@media only screen and (max-width: 1110px) {
+  .skill-border {
+    border-left: none;
+  }
+}
 
 #skills-icon {
   color: #03bcf4;
   font-size: 3rem;
   margin: 2rem;
+  animation: float 4s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, -5 px);
+  }
 }
 </style>

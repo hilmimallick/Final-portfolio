@@ -6,7 +6,7 @@
         <div
           v-for="res in resume"
           :key="res.id"
-          class="col-md-3 d-flex justify-content-center p-1"
+          class="col-lg-3 d-flex justify-content-center p-1 pt-5"
         >
           <div
             class="card h-100 text-white"
@@ -32,15 +32,16 @@ export default {
         {
           id: 1,
           name: "Trafalgar High School",
-          date: "3013-2017",
-          description: "I started and matriculated at Trafalgar High School.",
+          date: "2013-2017",
+          description:
+            "I started high school and matriculated at Trafalgar High School. The greate thing about being at Trafalgar was the fact that I was part of the Interact club whereby we volunteered to help feed the poor and recommended ideas for fundraising.",
         },
         {
           id: 2,
           name: "South African Education Program (SAEP)",
           date: "2019",
           description:
-            "A year long program bridging programme which included academic tutoring, basic computer skills training, educational excursions, career guidance, life skills training and community service.",
+            "A year long bridging programme which included academic tutoring, basic computer skills training, educational excursions, career guidance, life skills training and community service.",
         },
         {
           id: 3,
@@ -61,10 +62,20 @@ export default {
 };
 </script>
 <style>
+body {
+  background-color: black;
+}
 .Resume {
-  height: 96vh;
   background-color: black;
   padding-top: 50px;
+  height: 94vh;
+  max-height: fit-content;
+}
+
+@media only screen and (max-width: 700px) {
+  .Resume {
+    height: fit-content;
+  }
 }
 
 .resume-heading {

@@ -81,7 +81,7 @@ export default {
           name: "Jason Wandrag",
           img: "https://i.postimg.cc/5NbpthsD/Jason.jpg",
           email: "",
-          occupation: "lecture",
+          occupation: "lecturer",
           quote:
             "Hilmi is one of the most hardworking interns I have had the pleasure of working with. He also has a very calming demeanor and is always willing to help his peers. With a little guidance, Hilmi will definitely be a valuable developer.",
         },
@@ -91,10 +91,21 @@ export default {
 };
 </script>
 <style>
+body {
+  background-color: black;
+}
+
 #Testimonials {
+  height: 96vh;
+  max-height: fit-content;
   background-color: black;
   padding-top: 50px;
-  height: 96vh auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .Projects {
+    height: fit-content;
+  }
 }
 
 .testimonials-heading {

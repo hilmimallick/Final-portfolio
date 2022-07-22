@@ -19,7 +19,7 @@ footer {
   text-align: center;
   color: black;
   font-weight: bolder;
-  padding-top: 2px;
+  padding: 1vh;
 }
 #copyright {
   font-size: 20px;

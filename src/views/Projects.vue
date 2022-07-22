@@ -7,7 +7,7 @@
           v-for="project in projects"
           :key="project.id"
           :project="project"
-          class="col-md-2"
+          class="col-lg-2 d-flex justify-content-center p-1 pt-2"
         />
       </div>
     </div>
@@ -150,14 +150,25 @@ export default {
 };
 </script>
 <style>
+body {
+  background-color: black;
+}
+
 .Projects {
   height: 96vh;
   background-color: black;
   padding-top: 50px;
+  max-height: fit-content;
+}
+
+@media only screen and (max-width: 700px) {
+  .Projects {
+    height: fit-content;
+  }
 }
 
 #pro-row {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .projects-heading {

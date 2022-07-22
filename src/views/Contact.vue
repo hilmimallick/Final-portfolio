@@ -64,10 +64,20 @@
 export default {};
 </script>
 <style>
+body {
+  background-color: black;
+}
 .Contact {
   height: 96vh;
   background-color: black;
   padding-top: 50px;
+  max-height: fit-content;
+}
+
+@media only screen and (max-width: 700px) {
+  .Projects {
+    height: fit-content;
+  }
 }
 
 .contact-heading {
