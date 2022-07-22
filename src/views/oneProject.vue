@@ -156,7 +156,7 @@ export default {
           id: 12,
           name: "Golf Listing",
           made_with: "HTML, CSS and javaScript",
-          description: "lorem",
+          description: "This project mainly focused on JavaScript funtionality",
           img: "https://i.postimg.cc/Y0Djd1tt/Screenshot-49.png",
           academy: "Life Choices Academy",
           github: "https://github.com/hilmimallick/JavaScript-project.git",
@@ -203,6 +203,7 @@ body {
   border-left: 2px solid #03bcf4;
   color: white;
   text-align: center;
+  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 770px) {
@@ -223,5 +224,11 @@ body {
 
 #oci {
   font-size: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  one-row {
+    margin-top: 10em;
+  }
 }
 </style>

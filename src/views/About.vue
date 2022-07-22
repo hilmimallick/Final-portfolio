@@ -51,19 +51,21 @@
           <!-- for the text -->
           <div>
             <p class="lead text-white">
-              I am a person known to be organised, a team-player and patient
-              when it comes to helping people. I am an open minded person that
-              looks for ways to make my ideas come to reality through coding.
+              I am known by friends and family to be organised, a team-player
+              and patient when assisting those in need. I am an open minded
+              person, who looks for ways to make my ideas come to reality
+              through coding.
               <br />
-              My hobbies include running a 5km parkrun every Saturday morning,
-              hiking and I am a Western Province golfer and I love reading.
+              Time away from coding involves 5km morning runs, hiking and
+              reading. I also represent Western Province as a +1.5 handicap
+              golfer.
             </p>
           </div>
         </div>
 
         <!-- for the skills -->
         <div class="col-lg-6 skill-border">
-          <div class="row">
+          <div class="row" id="skills-row">
             <div class="col-md-4 d-flex justify-content-center">
               <div>
                 <i class="fa-brands fa-html5" id="skills-icon"></i>
@@ -74,7 +76,7 @@
               <div><i class="fa-brands fa-css3-alt" id="skills-icon"></i></div>
             </div>
 
-            <div class="col-md-4 d-flex justify-content-center">
+            <div class="col-md-4 d-flex justify-content-center" id="skill-row">
               <div><i class="fa-brands fa-js-square" id="skills-icon"></i></div>
             </div>
 
@@ -176,6 +178,18 @@ body {
 @keyframes float {
   50% {
     transform: translate(0, -5 px);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #skills-row {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #skills-row {
+    margin-bottom: 30px;
   }
 }
 </style>

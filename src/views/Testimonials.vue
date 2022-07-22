@@ -3,7 +3,7 @@
     <h1 class="testimonials-heading">MY TESTIMONIALS</h1>
 
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" id="test-row">
         <div
           v-for="test in testimonials"
           :key="test.id"
@@ -167,5 +167,11 @@ body {
 }
 .container-fluid {
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  #test-row {
+    margin-top: 5em;
+  }
 }
 </style>

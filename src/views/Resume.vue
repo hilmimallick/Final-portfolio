@@ -1,7 +1,7 @@
 <template>
   <div class="Resume">
     <h1 class="resume-heading">MY RESUME</h1>
-    <div class="container-fluid">
+    <div class="container-fluid" id="resume-row">
       <div class="row">
         <div
           v-for="res in resume"
@@ -54,7 +54,8 @@ export default {
           id: 4,
           name: "LIfe Choices Academy",
           date: "28 March 2022-Present",
-          description: "",
+          description:
+            "jmsuj msksi jskisk msssk ksos,iei kkdud jjwdnkndkasnd jdnsajkdnj jksdnasjkdnoqwdn jidnaskdnkqwodn jasdnjasdno jndjwndodn jdnjwdnkjasdn",
         },
       ],
     };
@@ -68,7 +69,7 @@ body {
 .Resume {
   background-color: black;
   padding-top: 50px;
-  height: 94vh;
+  height: 96vh;
   max-height: fit-content;
 }
 
@@ -107,5 +108,11 @@ body {
   margin-top: 30px;
   background-color: transparent;
   border: 2px solid #03bcf4;
+}
+
+@media only screen and (max-width: 992px) {
+  #resume-row {
+    margin-bottom: 6em;
+  }
 }
 </style>

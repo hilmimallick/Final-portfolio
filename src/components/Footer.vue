@@ -21,6 +21,7 @@ footer {
   font-weight: bolder;
   padding: 1vh;
 }
+
 #copyright {
   font-size: 20px;
 }

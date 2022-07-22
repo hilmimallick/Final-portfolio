@@ -1,7 +1,7 @@
 <template>
   <div class="Projects">
     <h1 class="projects-heading">MY PROJECTS</h1>
-    <div class="container-fluid">
+    <div class="container-fluid" id="pro-con">
       <div class="row" id="pro-row">
         <ProjectsCard
           v-for="project in projects"
@@ -193,6 +193,12 @@ body {
     color: #fff;
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
       0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #pro-con {
+    margin-bottom: 5em;
   }
 }
 </style>
